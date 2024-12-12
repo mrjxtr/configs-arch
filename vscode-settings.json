@@ -137,6 +137,7 @@
   },
 
   // Window Settings
+  "window.zoomLevel": 0.3,
   "search.quickOpen.includeHistory": false,
   "breadcrumbs.enabled": true,
   "window.newWindowProfile": "Default",
@@ -154,47 +155,12 @@
   "explorer.confirmDragAndDrop": false,
 
   // Terminal Settings
-  "terminal.integrated.defaultProfile.windows": "zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.letterSpacing": 1.2,
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Git Bash": {
-      "source": "Git Bash",
-      "icon": "logo-github"
-    },
-    "Windows PowerShell": {
-      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-    },
-    "pwsh": {
-      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-      "icon": "terminal-powershell"
-    },
-    "bash": {
-      "path": "C:\\Windows\\System32\\bash.exe",
-      "icon": "terminal-bash",
-      "overrideName": true
-    },
-    "zsh": {
-      "path": "C:\\Windows\\System32\\wsl.exe",
-      "args": ["-d", "Ubuntu", "--exec", "/usr/bin/zsh"],
-      "icon": "terminal-bash",
-      "overrideName": true
-    }
-  },
+  "terminal.integrated.inheritEnv": false,
 
   // Git Settings
   "git.confirmSync": false,
@@ -209,6 +175,8 @@
   "scm.diffDecorationsGutterWidth": 2,
 
   // Python Settings
+  "python.defaultInterpreterPath": "/home/mrjxtr/miniconda3/bin/python",
+  "python.condaPath": "/home/mrjxtr/miniconda3/condabin/conda",
   "python.analysis.inlayHints.callArgumentNames": "all",
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
@@ -375,7 +343,7 @@
   },
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.editor.showTabs": "none",
+  "workbench.editor.showTabs": "multiple",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.productIconTheme": "fluent-icons",
@@ -539,6 +507,8 @@
     "charliermarsh",
     "codeium",
     "codesnap",
+    "condabin",
+    "cssmin",
     "customtkinter",
     "davinci",
     "decrypter",
@@ -566,6 +536,7 @@
     "linewidth",
     "Lumacad",
     "Matplotlib",
+    "miniconda",
     "mrjxtr",
     "multiclass",
     "multioutput",
@@ -598,8 +569,5 @@
     "windir",
     "xlabel",
     "ylabel"
-  ],
-  "window.zoomLevel": 0.3,
-  "settingsSync.ignoredSettings": ["-window.zoomLevel"],
-  "terminal.integrated.defaultProfile.linux": "zsh"
+  ]
 }
