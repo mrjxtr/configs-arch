@@ -1,5 +1,5 @@
-// Update Settings
 {
+  // Update Settings
   "update.mode": "manual",
   "security.workspace.trust.untrustedFiles": "open",
 
@@ -37,7 +37,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "JetBrains Mono, monospace",
   "editor.fontLigatures": true,
   "editor.fontVariations": true,
   "editor.fontWeight": "normal",
@@ -66,7 +66,7 @@
     "reports": "enum",
     "venv": "environment"
   },
-  "material-icon-theme.folders.color": "#fdd835",
+  "material-icon-theme.folders.color": "#90a4ae",
   "material-icon-theme.folders.theme": "specific",
   "material-icon-theme.hidesExplorerArrows": true,
   "material-icon-theme.saturation": 1,
@@ -137,6 +137,7 @@
   },
 
   // Window Settings
+  "window.zoomLevel": 0.3,
   "search.quickOpen.includeHistory": false,
   "breadcrumbs.enabled": true,
   "window.newWindowProfile": "Default",
@@ -154,53 +155,18 @@
   "explorer.confirmDragAndDrop": false,
 
   // Terminal Settings
-  "terminal.integrated.defaultProfile.windows": "zsh",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.windows": "pwsh",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.letterSpacing": 1.2,
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Git Bash": {
-      "source": "Git Bash",
-      "icon": "logo-github"
-    },
-    "Windows PowerShell": {
-      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-    },
-    "pwsh": {
-      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-      "icon": "terminal-powershell"
-    },
-    "bash": {
-      "path": "C:\\Windows\\System32\\bash.exe",
-      "icon": "terminal-bash",
-      "overrideName": true
-    },
-    "zsh": {
-      "path": "C:\\Windows\\System32\\wsl.exe",
-      "args": ["-d", "Ubuntu", "--exec", "/usr/bin/zsh"],
-      "icon": "terminal-bash",
-      "overrideName": true
-    }
-  },
+  "terminal.integrated.inheritEnv": false,
 
   // Git Settings
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
-  "gitlens.codeLens.enabled": false,
   "git.autorefresh": true,
 
   // SCM Settings
@@ -209,12 +175,13 @@
   "scm.diffDecorationsGutterWidth": 2,
 
   // Python Settings
+  "python.defaultInterpreterPath": "/home/mrjxtr/miniconda3/bin/python",
+  "python.condaPath": "/home/mrjxtr/miniconda3/condabin/conda",
   "python.analysis.inlayHints.callArgumentNames": "all",
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.typeCheckingMode": "off",
-  "python.defaultInterpreterPath": "D:\\JXTR\\anaconda3\\envs\\py-dev-env\\python.exe",
 
   // Jupyter Settings
   "jupyter.askForKernelRestart": false,
@@ -364,7 +331,7 @@
       "titleBar.border": "#404040",
       "titleBar.inactiveBackground": "#202020",
       "titleBar.inactiveForeground": "#9b9b9ebd",
-      "welcomePage.background": "#00001a",
+      // "welcomePage.background": "#00001a",
       "widget.border": "#404040",
       "widget.shadow": "#000000"
     }
@@ -376,7 +343,7 @@
   },
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.empty.hint": "hidden",
-  "workbench.editor.showTabs": "none",
+  "workbench.editor.showTabs": "multiple",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.layoutControl.enabled": false,
   "workbench.productIconTheme": "fluent-icons",
@@ -419,6 +386,7 @@
   "extensions.experimental.deferredStartupFinishedActivation": true,
 
   // Cursor IDE settings
+  "workbench.activityBar.orientation": "vertical", // this is to fix the vim ctrl+l/h bug
   "cursor.chat.showPremiumChatHistory": false,
   "cursor.chat.collapseInputBoxPills": true,
   "cursor.chat.smoothStreaming": true,
@@ -521,8 +489,8 @@
 
   // Custom Css and JS Settings (Linux)
   "vscode_custom_css.imports": [
-    "file:///home/mrjxtr/Documents/custom-vscode-conf/custom-settings.css",
-    "file:///home/mrjxtr/Documents/custom-vscode-conf/custom-vscode-script.js"
+    "file:///home/mrjxtr/Documents/custom-cfg/vscode/custom.css",
+    "file:///home/mrjxtr/Documents/custom-cfg/vscode/custom-script.js"
   ],
 
   // Custom Css and JS Settings (Windows)
@@ -537,8 +505,10 @@
     "astype",
     "autorefresh",
     "charliermarsh",
+    "chromedriver",
     "codeium",
     "codesnap",
+    "condabin",
     "customtkinter",
     "davinci",
     "decrypter",
@@ -566,6 +536,7 @@
     "linewidth",
     "Lumacad",
     "Matplotlib",
+    "miniconda",
     "mrjxtr",
     "multiclass",
     "multioutput",
@@ -598,6 +569,5 @@
     "windir",
     "xlabel",
     "ylabel"
-  ],
-  "window.zoomLevel": 0.3
+  ]
 }
