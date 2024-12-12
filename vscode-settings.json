@@ -156,6 +156,7 @@
 
   // Terminal Settings
   "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.windows": "pwsh",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
   "terminal.integrated.fontSize": 15,
   "terminal.integrated.gpuAcceleration": "on",
@@ -166,7 +167,6 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
-  "gitlens.codeLens.enabled": false,
   "git.autorefresh": true,
 
   // SCM Settings
