@@ -2,6 +2,7 @@
   // Update Settings
   "update.mode": "manual",
   "security.workspace.trust.untrustedFiles": "open",
+  "telemetry.telemetryLevel": "off",
 
   // Editor Settings
   "editor.defaultFormatter": "charliermarsh.ruff",
@@ -32,7 +33,6 @@
   "emmet.triggerExpansionOnTab": true,
   "ruff.lineLength": 80,
   "ruff.lint.enable": false,
-  "prettier.tabWidth": 2,
   "editor.accessibilitySupport": "off",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -137,10 +137,10 @@
   },
 
   // Window Settings
-  "window.zoomLevel": 0.3,
   "search.quickOpen.includeHistory": false,
   "breadcrumbs.enabled": true,
   "window.newWindowProfile": "Default",
+  "window.zoomLevel": 0.2,
   "window.commandCenter": false,
   "window.customTitleBarVisibility": "auto",
   "window.menuBarVisibility": "compact",
@@ -162,14 +162,54 @@
   "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.letterSpacing": 1.2,
   "terminal.integrated.inheritEnv": false,
+  "terminal.integrated.profiles.windows": {
+    // ? For my current Windows setup only
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "icon": "logo-github"
+    },
+    "Windows PowerShell": {
+      "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    },
+    "pwsh": {
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "icon": "terminal-powershell"
+    },
+    "bash": {
+      "path": "C:\\Windows\\System32\\bash.exe",
+      "icon": "terminal-bash",
+      "overrideName": true
+    },
+    "zsh": {
+      "path": "C:\\Windows\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu", "--exec", "/usr/bin/zsh"],
+      "icon": "terminal-bash",
+      "overrideName": true
+    }
+  },
 
   // Git Settings
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "git.openRepositoryInParentFolders": "never",
   "git.autorefresh": true,
+  "git.autofetch": false,
+  "githubPullRequests.allowFetch": false,
+  "diffEditor.ignoreTrimWhitespace": false,
 
-  // SCM Settings
+  // Source Control Decorations Settings
   "scm.diffDecorations": "gutter",
   "scm.diffDecorationsGutterVisibility": "hover",
   "scm.diffDecorationsGutterWidth": 2,
@@ -181,7 +221,7 @@
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
-  "python.analysis.typeCheckingMode": "off",
+  "python.analysis.typeCheckingMode": "strict", // ! use basic or standard for fast development project
 
   // Jupyter Settings
   "jupyter.askForKernelRestart": false,
@@ -488,12 +528,14 @@
   },
 
   // Custom Css and JS Settings (Linux)
+  // ! When enabling and reloading, make sure to comment out the OS that you are not using
   "vscode_custom_css.imports": [
     "file:///home/mrjxtr/Documents/custom-cfg/vscode/custom.css",
     "file:///home/mrjxtr/Documents/custom-cfg/vscode/custom-script.js"
   ],
 
   // Custom Css and JS Settings (Windows)
+  // ! When enabling and reloading, make sure to comment out the OS that you are not using
   // "vscode_custom_css.imports": [
   //   "file:///C:/Users/JXTR/AppData/Roaming/Code/User/custom-settings.css",
   //   "file:///D:/JXTR/Documents/custom-vscode-script.js"
@@ -503,6 +545,7 @@
   "cSpell.userWords": [
     "actuals",
     "astype",
+    "autofetch",
     "autorefresh",
     "charliermarsh",
     "codeium",
@@ -558,6 +601,7 @@
     "scminput",
     "Scrapy",
     "Seaborn",
+    "Sione",
     "sqlalchemy",
     "sqltools",
     "suptitle",
