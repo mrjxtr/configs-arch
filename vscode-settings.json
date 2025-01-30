@@ -441,6 +441,7 @@
   // SQLTools Settings
   "sqltools.connections": [],
   "sqltools.useNodeRuntime": false,
+  "sqltools.disableNodeDetectNotifications": true,
 
   // Markdown Preview Enhanced Settings
   "markdown-preview-enhanced.codeBlockTheme": "github-dark.css",
