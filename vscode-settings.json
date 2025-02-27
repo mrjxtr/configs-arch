@@ -9,6 +9,9 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -33,6 +36,7 @@
   "emmet.triggerExpansionOnTab": true,
   "ruff.lineLength": 80,
   "ruff.lint.enable": false,
+  "prettier.tabWidth": 2,
   "editor.accessibilitySupport": "off",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -140,7 +144,6 @@
   "search.quickOpen.includeHistory": false,
   "breadcrumbs.enabled": true,
   "window.newWindowProfile": "Default",
-  "window.zoomLevel": 0.2,
   "window.commandCenter": false,
   "window.customTitleBarVisibility": "auto",
   "window.menuBarVisibility": "compact",
@@ -206,22 +209,23 @@
   "git.openRepositoryInParentFolders": "never",
   "git.autorefresh": true,
   "git.autofetch": false,
+  "gitlens.codeLens.enabled": false,
   "githubPullRequests.allowFetch": false,
+  "githubPullRequests.pullBranch": "never",
   "diffEditor.ignoreTrimWhitespace": false,
 
-  // Source Control Decorations Settings
+  // SCM Settings
   "scm.diffDecorations": "gutter",
   "scm.diffDecorationsGutterVisibility": "hover",
   "scm.diffDecorationsGutterWidth": 2,
 
-  // Python Settings
-  "python.defaultInterpreterPath": "/home/mrjxtr/miniconda3/bin/python",
-  "python.condaPath": "/home/mrjxtr/miniconda3/condabin/conda",
+  // Source Control Decorations Settings
   "python.analysis.inlayHints.callArgumentNames": "all",
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
-  "python.analysis.typeCheckingMode": "strict", // ! use basic or standard for fast development project
+  "python.analysis.typeCheckingMode": "basic", // ! use basic or standard for fast development project
+  "python.analysis.diagnosticMode": "openFilesOnly",
 
   // Jupyter Settings
   "jupyter.askForKernelRestart": false,
@@ -429,7 +433,7 @@
   "codeium.enableConfig": {
     "*": true
   },
-  "codeium.enableExplainProblem": false,
+
   "codeium.enableSearch": true,
   "codeium.enableCodeLens": false,
   "codeium.enableCommandSideHintEducation": false,
@@ -440,7 +444,7 @@
 
   // SQLTools Settings
   "sqltools.connections": [],
-  "sqltools.useNodeRuntime": false,
+  "sqltools.useNodeRuntime": true,
   "sqltools.disableNodeDetectNotifications": true,
 
   // Markdown Preview Enhanced Settings
@@ -451,6 +455,9 @@
   "codesnap.backgroundColor": "#aaaaaa",
   "codesnap.containerPadding": "2em",
   "codesnap.showWindowControls": false,
+
+  // Live Server Settings
+  "liveServer.settings.donotShowInfoMsg": true,
 
   // Cursor Settings
   "terminal.integrated.cursorBlinking": true,
@@ -486,7 +493,7 @@
       "commands": ["workbench.action.files.save"]
     },
     {
-      "before": ["leader", "q"],
+      "before": ["leader", "x"],
       "commands": ["workbench.action.closeActiveEditor"]
     },
     {
@@ -502,6 +509,11 @@
     {
       "before": ["leader", "space"],
       "commands": ["workbench.action.quickOpen"]
+    },
+    // Editing
+    {
+      "before": ["leader", "/"],
+      "commands": ["editor.actiion.commentLine"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -543,76 +555,6 @@
   // ],
 
   // cSpell Settings
-  "cSpell.userWords": [
-    "actuals",
-    "astype",
-    "autofetch",
-    "autorefresh",
-    "charliermarsh",
-    "codeium",
-    "codesnap",
-    "condabin",
-    "cssmin",
-    "customtkinter",
-    "davinci",
-    "decrypter",
-    "dotenv",
-    "dropna",
-    "dtype",
-    "dtypes",
-    "easymotion",
-    "encrypter",
-    "esbenp",
-    "fernet",
-    "Fernet",
-    "figsize",
-    "flaskapp",
-    "getenv",
-    "hyperparameters",
-    "incsearch",
-    "interactable",
-    "ipynb",
-    "joblib",
-    "jsonify",
-    "JXTR",
-    "LICENCE",
-    "linestyle",
-    "linewidth",
-    "Lumacad",
-    "Matplotlib",
-    "miniconda",
-    "mrjxtr",
-    "multiclass",
-    "multioutput",
-    "neighbourhood",
-    "Neighbourhood",
-    "neighbourhoods",
-    "Neighbourhoods",
-    "nunique",
-    "openai",
-    "outdent",
-    "pady",
-    "pltc",
-    "plts",
-    "preprocess",
-    "Pseudocode",
-    "pwsh",
-    "pytest",
-    "Scikit",
-    "scminput",
-    "Scrapy",
-    "Seaborn",
-    "Sione",
-    "sqlalchemy",
-    "sqltools",
-    "suptitle",
-    "Sysnative",
-    "Upwork",
-    "venv",
-    "vscodevim",
-    "vsplit",
-    "windir",
-    "xlabel",
-    "ylabel"
-  ]
+  "cSpell.userWords": [],
+  "discord.suppressNotifications": true
 }
