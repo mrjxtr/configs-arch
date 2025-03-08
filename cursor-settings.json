@@ -207,9 +207,6 @@
 
   // Interactive Window Settings
   "interactiveWindow.collapseCellInputCode": "never",
-
-  // Workbench Settings
-  "workbench.activityBar.location": "top",
   "workbench.colorTheme": "Night Owl",
   "workbench.colorCustomizations": {
     "[Night Owl]": {
@@ -331,12 +328,25 @@
       "tab.inactiveBackground": "#202020",
       "tab.inactiveForeground": "#9b9b9ebd",
       "tab.unfocusedActiveBorder": "#404040",
-      "terminal.background": "#000000",
-      "terminal.ansiBrightWhite": "#979797",
-      "terminal.foreground": "#cacaca",
-      "terminal.initialHintForeground": "#9b9b9ebd",
-      "terminal.selectionBackground": "#9b9b9e7c",
-      "terminal.tab.activeBorder": "#404040",
+      "terminal.foreground": "#e1e2e2",
+      "terminal.background": "#11151a",
+      "terminalCursor.foreground": "#e1e2e2",
+      "terminal.ansiBlack": "#11151a",
+      "terminal.ansiRed": "#A88182",
+      "terminal.ansiGreen": "#7c899c",
+      "terminal.ansiYellow": "#91908d",
+      "terminal.ansiBlue": "#8E949D",
+      "terminal.ansiMagenta": "#a690a6",
+      "terminal.ansiCyan": "#8b99ad",
+      "terminal.ansiWhite": "#e1e2e2",
+      "terminal.ansiBrightBlack": "#9d9e9e",
+      "terminal.ansiBrightRed": "#ba9192",
+      "terminal.ansiBrightGreen": "#8b99ad",
+      "terminal.ansiBrightYellow": "#a3a2a0",
+      "terminal.ansiBrightBlue": "#8E949D",
+      "terminal.ansiBrightMagenta": "#b59eb5",
+      "terminal.ansiBrightCyan": "#99a8bd",
+      "terminal.ansiBrightWhite": "#e1e2e2",
       "titleBar.activeBackground": "#202020",
       "titleBar.activeForeground": "#d8dae0",
       "titleBar.border": "#404040",
@@ -398,12 +408,9 @@
 
   // Cursor IDE settings
   "workbench.activityBar.orientation": "vertical", // this is to fix the vim ctrl+l/h bug
-  "cursor.chat.showPremiumChatHistory": false,
-  "cursor.chat.collapseInputBoxPills": true,
-  "cursor.chat.smoothStreaming": true,
+  "workbench.activityBar.location": "top",
   "cursor.composer.collapsePaneInputBoxPills": true,
   "cursor.chat.terminalShowHoverHint": false,
-  "cursor.chat.showSuggestedFiles": true,
 
   // AutoDocstring Settings
   "autoDocstring.includeExtendedSummary": true,
